@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    background-color: #E3E3E3;
+}
+
+/*Dentro del header, los íconos fueron metidos dentro de un unordered list para ayudar con el espaciado dentro del stylesheet*/
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #3B3E48;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a{
+    color: #D5D5D5;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 30px 0 30px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50%;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.login-form *{
+    margin: 20px;
+}
+
+.login form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input-box{
+    height: 48px;
+    width: 50%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    color: #3B3E48;
+    background-color: white;
+}
+
+.input-box svg{
+    margin: 0 5px 0 5px;
+}
+
+.input-box input[type="text"], .input-box input[type="password"]{
+    margin: 0;
+    padding: 6px;
+    border: none;
+    background: none;
+}
+
+.input-box input[type="text"]:focus, .input-box input[type="password"]:focus{
+    height: 100%;
+    outline: none;
+}
+
+.vr{
+    height: 50%;
+    border-left: 1px solid gray;
+    margin: 0 4px 0 4px;
+}
+
+.input-box *{
+    display: inline-block;
+}
