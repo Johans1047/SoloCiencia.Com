@@ -7,6 +7,8 @@
     border: 0;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: 200ms;
 }
 
 *:focus{
@@ -20,7 +22,6 @@ a{
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -33,18 +34,31 @@ body{
 
 header{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     background-color: #3B3E48;
     color: white;
-    padding: 20px;
     width: 100%;
+}
+
+.header-col{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-top{
+    padding: 20px;
+}
+
+#header-bottom{
+    background-color: #2F333D;
+    padding: 10px;
+    justify-content: space-around;
 }
 
 header ul li, footer ul li{
     display: inline-block;
     height: 100%;
-    transition: 200ms;
     padding: 0 5px;
     margin: 0 30px;
 }
@@ -53,7 +67,6 @@ header ul li, footer ul li{
 header ul li a:hover, footer ul li a:hover{
     color:  #169FE3;
 }
-
 
 .form-container{
     width: 30%;
@@ -69,7 +82,13 @@ header ul li a:hover, footer ul li a:hover{
 
 .form-container hr{
     border: 1px solid darkgray;
-    width: 90%;
+    width: 80%;
+}
+
+.form-wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-container form{
@@ -80,18 +99,17 @@ header ul li a:hover, footer ul li a:hover{
 }
 
 .form-container *{
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .input-box{
     height: 48px;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     border: 1px solid darkgray;
     border-radius: 2px;
     background-color: white;
-    box-sizing: content-box;
     padding: 4px;
 }
 
@@ -105,20 +123,23 @@ header ul li a:hover, footer ul li a:hover{
     background-color: darkgray;
 }
 
-.input-box input[type="text"], .input-box input[type="password"]{
+*::placeholder{
+    color: gray;
+}
+
+.input-box input{
     width: 85%;
     border: none;
+    color: gray;
 }
 
 .login-form input[type="submit"]{
     font-size: 16px;
     background-color: #169FE3;
-    font-weight: bold;
     padding: 4px;
     color: white;
     height: 48px;
-    width: 80%;
-    transition: 100ms;
+    width: 100%;
     border-radius: 4px;
 }
 
@@ -165,7 +186,6 @@ footer{
     color: white;
     font-size: 16px;
     background-color: #169FE3;
-    transition: 200ms;
 }
 
 #footer-logout:hover{
