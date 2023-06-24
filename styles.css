@@ -133,6 +133,26 @@ header ul li a:hover, footer ul li a:hover{
     color: gray;
 }
 
+.input-box input:disabled{
+    background-color: lightgray;
+}
+
+.input-box.disabled{
+    background-color: lightgray;
+
+}
+
+.input-box.disabled svg{
+    color: gray;
+}
+
+.input-box select{
+    width: 90%;
+    height: 100%;
+    border: 1px solid white;
+    color: gray;
+}
+
 .login-form input[type="submit"]{
     font-size: 16px;
     background-color: #169FE3;
