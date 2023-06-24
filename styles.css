@@ -147,6 +147,64 @@ header ul li a:hover, footer ul li a:hover{
     background-color: #1175A7;
 }
 
+.periodic-table-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.periodic-table-container *{
+    margin: 20px 0;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 24px;
+}
+
+table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+}
+
+table td a{
+    color: black;
+    font-weight: bold;
+}
+
+table td:hover{
+    background-color: #031FA2;
+}
+
+table td:hover a{
+    color: white;
+}
+
+.false{
+    visibility: hidden;
+    border: none;
+}
+
+.alkali, .alkaline-earth{
+    background-color: #FF9999;
+}
+
+.transition{
+    background-color: #99CCFF;
+}
+
+.triel, .tetrel, .pnictogen, .chalcogen,.halogen,.noble{
+    background-color: #FDFF8C;
+}
+
+.f-block{
+    background-color: #9BFF99;
+}
+
 footer{
     display: flex;
     flex-direction: column;
