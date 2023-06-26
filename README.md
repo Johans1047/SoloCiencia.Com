@@ -44,5 +44,5 @@ License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
 
 Contact
-If you have any questions, suggestions, or feedback, please contact project_name@example.com.
+If you have any questions, suggestions, or feedback, please contact solociencia376@gmail.com.
 
