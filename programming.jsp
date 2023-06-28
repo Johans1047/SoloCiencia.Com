@@ -25,7 +25,7 @@
 	    // Cadena, con las posiciones de los parámetros
 	    String sqlquery = "INSERT INTO curso_programación (Nombre_Completo, Cédula, Curso, Fecha_de_Ingreso) VALUES (?,?,?,?)";
 
-    	//try {
+    	try {
 	    	// Driver para conectarse a la base de Datos
 	    	Class.forName("com.mysql.jdbc.Driver");
 	    	
@@ -51,12 +51,12 @@
 	    	    System.out.println("No se pudo actualizar el registro.");
 	    	}
     	
-    	//} catch (Exception e)
-    	//{
-    		//out.println("--ERROR--");
-    		//out.println("--Consulta Inválida--");
+    	} catch (Exception e)
+    	{
+    		out.println("--ERROR--");
+    		out.println("--Consulta Inválida--");
     	
-    	//}
+    	}
     	
     %>
 </body>
