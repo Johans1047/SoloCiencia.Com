@@ -51,23 +51,23 @@
     <section class="form-container">
         <h2 style="font-size:20px;">Iniciar Sesión</h2>
         <hr style="margin:0;">
-            <form action="#" class="login-form">
-                <div class="form-wrapper" style="margin:0;">
+            <form action="login.jsp" class="login-form">
+                <div class="form-wrapper" style="margin:0;" id="form-box">
                     <div class="input-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
                         </svg>
                         <div class="vr"></div>
-                        <input type="text" name="fullname" id="fullname" placeholder="Nombre completo">            
+                        <input type="text" name="fname" id="fname0" placeholder="Primer nombre">            
                     </div>
                     <div class="input-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
                             <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
                         </svg>
                         <div class="vr"></div>
-                        <input type="password" name="pass" id="pass" placeholder="Contraseña">            
+                        <input type="password" name="pass" id="pass0" placeholder="Contraseña">            
                     </div>
-                    <input type="submit" value="Iniciar sesión">
+                    <input type="submit" value="Iniciar sesión" onclick="cargar()">
                 </div>
                 
             </form>
@@ -120,5 +120,26 @@
             </p>
         </div>
     </footer>
+    <script>
+    
+    function cargar(){
+        // Obtener los parámetros de la URL
+        var params = new URLSearchParams(window.location.search);
+
+        // Obtener el valor del parámetro login
+        var login_ = params.get('login');
+        
+        var contador = 0;
+        
+        if (login_ != "incorrecto"){        	
+        	alert("Has iniciado sesión con éxito.");
+        }
+        
+        else if (contador == 0){
+        	alert("Error: Usuario o contraseña incorrectos");
+        }
+
+    }
+    </script>
 </body>
 </html>
