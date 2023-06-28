@@ -51,7 +51,7 @@
     <section class="form-container">
         <h2 style="font-size:20px;">Registrarse en el Curso de Química y Biología</h2>
         <hr style="margin:0;">
-            <form action="#" class="login-form">
+            <form action="chem-bio.jsp" class="login-form" >
                 <div class="form-wrapper" style="margin:0;">
                     <div class="input-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -72,21 +72,21 @@
                             <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
                           </svg>
                         <div class="vr"></div>
-                        <input type="text" name="course" id="course" value="Química y Biología" disabled>            
+                        <input type="text" name="course" id="course0" value="Química y Biología" readonly>            
                     </div>
                     <div class="input-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
                             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"/>
                           </svg>
                         <div class="vr"></div>
-                        <select name="course-start" id="course-start">
+                        <select name="course-start" id="course-start0">
                             <option value="" selected disabled>Fecha de ingreso</option>
                             <option value="jul-20">20 de julio</option>
                             <option value="oct-24">24 de octubre</option>
                             <option value="nov-14">14 de noviembre</option>
                         </select>           
                     </div>
-                    <input type="submit" value="Registrarse">
+                    <input type="submit" value="Registrarse" onclick="cargar()">
                 </div>
                 
             </form>
@@ -139,5 +139,10 @@
             </p>
         </div>
     </footer>
+    <script>    
+    	function cargar(){  
+        	alert("Te has registrado con éxito en el curso de Química y Biología.");   
+    	}
+    </script>
 </body>
 </html>
