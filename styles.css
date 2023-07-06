@@ -68,6 +68,62 @@ header ul li a:hover, footer ul li a:hover{
     color:  #169FE3;
 }
 
+.contact-us{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-us h2{
+    color: white; 
+    margin: 0 auto 20px auto;
+}
+
+.contact-row{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card{
+    flex: 1;
+    margin: 20px;
+    background-color: lightgray;
+    border: 2px solid gray;
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    height: 150px;
+    width: 20%;
+}
+
+.contact-card .vr{
+    height: 90%;
+    width: 1px;
+    background-color: gray;
+    align-self: center;
+    margin: 10px;
+}
+
+.pfp-container{
+    height: 100%;
+    width:  150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp-container img{
+    width: 80%;
+    height: auto;
+}
+
+.contact-card hgroup p{
+    color: #4D4D4D;
+    font-size: 12px;
+}
+
 .form-container{
     width: 30%;
     margin: auto;
